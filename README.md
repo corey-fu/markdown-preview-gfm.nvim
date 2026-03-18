@@ -17,9 +17,12 @@ A lightweight Neovim plugin for previewing Markdown files using Go-based tools.
 
 ```lua
 return {
-  "corey-fu/markdown-preview.nvim",
-  ft = { "markdown", "text" },
-  opts = {},
+  { "iamcco/markdown-preview.nvim", enabled = false }, -- if the old plugin is still installed, disable it
+  {
+    "corey-fu/markdown-preview-gfm.nvim",
+    ft = { "markdown", "text" },
+    opts = {},
+  },
 }
 ```
 
@@ -27,7 +30,7 @@ return {
 
 ```lua
 {
-  dir = "~/markdown-preview",
+  dir = "~/markdown-preview-gfm",
   ft = { "markdown", "text" },
   opts = {},
 }
