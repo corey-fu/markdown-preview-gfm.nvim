@@ -1,4 +1,4 @@
-# markdown-preview.nvim
+# markdown-preview-gfm.nvim
 
 A lightweight Neovim plugin for previewing Markdown files using Go-based tools.
 
@@ -61,7 +61,3 @@ require("markdown-preview").setup({
 
 Press `q` or `<Esc>` inside the inline preview split to close it.
 The browser preview server is automatically killed when the buffer is closed.
-
-## License
-
-MIT
